@@ -31,6 +31,8 @@ public fun evalOperator (operator, left, right) {
    | ">=" -> left >= right
    | "==" -> left == right
    | "!=" -> left != right
+   | "&&" -> left && right
+   | "!!" -> left !! right 
    | op -> failure("Unimplemented op: " ++ op)
    esac
 }
